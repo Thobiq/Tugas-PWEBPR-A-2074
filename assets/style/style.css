@@ -3,17 +3,20 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 .navbar{
     background-color: #D9D9D9;
     /* display: flex; */
+    height: 50px;
 }
 
 .navbar ul{
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 50px;
     /* background-color: black; */
 }
 
@@ -25,37 +28,333 @@
 .navbar ul li a{
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 
 .title{
     text-align: center;
+    font-weight: 700;
+    margin: 30px 0;
 }
 
 .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
     gap: 29px;
-    width: 1029px;
-    height: 669px;
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .left-row{
-    background-color: blue;
+    /* background-color: blue; */
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.top-card{
-    width: 500px;
-    height: 100px;
-    background-color: bisque;
+.top-card-left{
+    position: relative;
+    height: 180px;
+    max-width: 490px;
+    max-height: 180px;
+    background-color: #FFF4DC;
     border-radius: 20px;
 }
 
-.right-row{
-    background-color: aqua;
+.top-card-img{
+    width: 240px;
+    position: absolute;
+    bottom: 0;
+}
+
+.card-title-top-card-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 220px;
+    padding-right: 20px;
+
+}
+
+.title-top-card-left{
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.subtitle-top-card-left{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 40px
+}
+
+.btn-top-card{
+    height: 37px;
+    background-color: #E29A00;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+}
+
+.top-card-right{
+    width: 503px;
+    height: 392px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.field-top-card-right{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #D8D6C1;
+    border-radius: 20px;
+    width: 423px;
+    height: 96px;
+}
+
+.field-top-card-right-image{
+    width: 70px;
+    margin: 0 10px;
+}
+
+.field-top-card-right-info-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.field-top-card-right-button{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    width: 149px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+}
+
+.sec-card-right{
+    background-color: #F2F2F2;
     width: 500px;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.field-sec-card-right{
+    display: flex;
+    align-items: center;
+}
+
+.field-sec-card-right-image{
+    width: 120px;
+    display: flex;
+}
+
+.field-sec-card-right-title{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.field-sec-card-right-button{
+    margin-top: 10px;
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D8D6C1;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 
 
+.right-row{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+.left-row-2{
+    width: 500px;
+    display: flex;
+    gap: 20px;
+}
+
+.col-left-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bg-light-green{
+    background-color: #E1FFDC;
+}
+
+.bg-green{
+    background-color: #7EB782;
+}
+
+.bg-pink{
+    background-color: #FF5573;
+}
+
+.bg-light-pink{
+    background-color: #FFCED7;
+}
+
+.bg-light-blue{
+    background-color: #E2F2FF;
+}
+
+.bg-blue{
+    background-color: #3279AF;
+}
+
+.base-card{
+    position: relative;
+    width: 235px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.btn-base{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    width: 173px;
+    height: 37px;
+}
+
+.btn-base-card{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.base-card-image{
+    width: 239px;
+    height: 178px;
+}
+
+.col-left-right{
+    border-radius: 20px;
+    height: 392px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-left-right-image{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.col-left-right-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.col-left-right-desc{
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    width: 133px;
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        padding-bottom: 60px;
+    }
+
+    /* .container{
+        align-items: center;
+        background-color: #3279AF;
+    } */
+
+    .navbar{
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+    }
+
+    .main{
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left-row-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-card-left{
+        width: 289px;
+        height: 299px;
+        max-height: 299px;
+        /* height: 400px; */
+        flex-direction: column;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .top-card-img{
+        width: 240px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .subtitle-top-card-left{
+        margin: 0;
+    }
+
+    .btn-top-card{
+        width: 212px;
+    }
+
+    .card-title-top-card-left{
+        flex-direction: column-reverse;
+        margin-top: -22px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .card-title-top-card-left div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-top-card-left{
+        font-size: 24px;
+    }
+
+    
+}

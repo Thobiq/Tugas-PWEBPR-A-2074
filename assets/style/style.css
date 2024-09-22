@@ -7,21 +7,46 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.bg-light-green{
+    background-color: #E1FFDC;
+}
+
+.bg-green{
+    background-color: #7EB782;
+}
+
+.bg-pink{
+    background-color: #FF5573;
+}
+
+.bg-light-pink{
+    background-color: #FFCED7;
+}
+
+.bg-light-blue{
+    background-color: #E2F2FF;
+}
+
+.bg-blue{
+    background-color: #3279AF;
+}
+
 .navbar{
     background-color: #D9D9D9;
-    /* display: flex; */
+    justify-content: center;
+    display: flex;
     height: 50px;
+    width: 100%;
 }
 
 .navbar ul{
-    justify-content: center;
+    width: 320px;
+    justify-content: space-between;
     align-items: center;
     display: flex;
-    /* background-color: black; */
 }
 
 .navbar ul li {
-    margin: 0 30px;
     list-style-type: none;
 }
 
@@ -38,7 +63,6 @@ body{
 }
 
 .container{
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -47,12 +71,9 @@ body{
     gap: 29px;
     display: flex;
     flex-direction: row;
-    /* background-color: aquamarine; */
 }
 
 .left-row{
-    /* background-color: blue; */
-    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -79,7 +100,6 @@ body{
     height: 100%;
     padding-left: 220px;
     padding-right: 20px;
-
 }
 
 .title-top-card-left{
@@ -105,7 +125,6 @@ body{
 }
 
 .top-card-right{
-    width: 503px;
     height: 392px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -185,14 +204,10 @@ body{
     font-size: 15px;
 }
 
-
-
 .right-row{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 500px;
 }
 
 .left-row-2{
@@ -205,30 +220,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.bg-light-green{
-    background-color: #E1FFDC;
-}
-
-.bg-green{
-    background-color: #7EB782;
-}
-
-.bg-pink{
-    background-color: #FF5573;
-}
-
-.bg-light-pink{
-    background-color: #FFCED7;
-}
-
-.bg-light-blue{
-    background-color: #E2F2FF;
-}
-
-.bg-blue{
-    background-color: #3279AF;
 }
 
 .base-card{
@@ -269,6 +260,12 @@ body{
     align-items: center;
 }
 
+.col-left-right div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .col-left-right-image{
     margin-top: 10px;
     width: 200px;
@@ -288,14 +285,26 @@ body{
 }
 
 @media screen and (max-width: 425px) {
+
+    .bg-light-orange{
+        background-color: #FFDBC5;
+    }
+    
+    .bg-orange{
+        background-color: #E36415;
+    }
+
+    .bg-medium-blue{
+        background-color: #8FC5ED;
+    }
+
+    .bg-old-blue{
+        background-color: #275E87;
+    }
+
     body{
         padding-bottom: 60px;
     }
-
-    /* .container{
-        align-items: center;
-        background-color: #3279AF;
-    } */
 
     .navbar{
         position: fixed;
@@ -304,12 +313,17 @@ body{
     }
 
     .main{
-        /* align-items: center; */
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
+    .left-row{
+        width: auto;
+    }
+
     .left-row-2{
+        width: auto;
         flex-direction: column;
         align-items: center;
     }
@@ -318,7 +332,7 @@ body{
         width: 289px;
         height: 299px;
         max-height: 299px;
-        /* height: 400px; */
+        margin-top: 50px;
         flex-direction: column;
         left: 50%;
         transform: translateX(-50%);
@@ -326,7 +340,7 @@ body{
 
     .top-card-img{
         width: 240px;
-        top: 20%;
+        top: 17%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -352,9 +366,137 @@ body{
         align-items: center;
     }
 
+    .right-row{
+        display: flex;
+        align-items: center;
+    }
+
     .title-top-card-left{
         font-size: 24px;
     }
 
+    .top-card-right{
+        max-width: 289px;
+        height: auto;
+        width: auto;
+        padding: 0;
+    }
+
+    .field-top-card-right{
+        position: relative;
+        width: 289px;
+        height: 221px;
+        background-color: #E9E8E2;
+        flex-direction: column;
+        border: none;
+    }
+
+    .button-mobile{
+        font-size: 20px;
+        font-weight: 500;
+        width: 212px;
+        height: 45px;
+        border-radius: 15px;
+    }
+
+    .field-top-card-right-image{
+        height: 100%;
+        width: auto;
+    }
+
+    .field-top-card-right-button{
+        background-color: #CAC8B3;
+    }
+
+    .field-top-card-right-info-title{
+        display: none;
+    }
+
+    .field-top-card-right-info{
+        position: absolute;
+        top: 75%;
+    }
+
+    .sec-card-right{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .base-card{
+        display: flex;
+        justify-content: center;
+        width: 289px;
+        height: 221px;
+    }
+
+    .base-card-image{
+        width: 275px;
+        height: 217px;
+    }
+
+    .btn-base-card{
+        top: 85%;
+    }
+
+    .col-left-right{
+        position: relative;
+        width: 289px;
+        height: 314px;
+        margin-top: 50px;
+    }
+
+    .col-left-right-image{
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 275px;
+    }
+
+    .col-left-right-desc{
+        margin: 0;
+        width: 169px;
+    }
+
+    .btn-col-left-right{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .field-col-left-right{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 230px;
+    }
+
+    .sec-card-right{
+        background-color: white;
+    }
+
+    .field-sec-card-right{
+        position: relative;
+        border-radius: 20px;
+        width: 289px;
+        height: 226px;
+        flex-direction: column;
+    }
+
+    .field-sec-card-right-title{
+        display: none;
+    }
+
+    .field-sec-card-right-image{
+        height: 100%;
+        width: auto;
+    }
+
+    .field-sec-card-right-button{
+        position: absolute;
+        top: 80%;
+        transform: translate(-50%, -50%);
+    }
     
 }

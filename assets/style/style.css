@@ -284,7 +284,14 @@ body{
     width: 133px;
 }
 
+button:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
 @media screen and (max-width: 425px) {
+
+
 
     .bg-light-orange{
         background-color: #FFDBC5;
